@@ -1,0 +1,106 @@
+html {
+  box-sizing: border-box;
+}
+
+*, 
+*::before, 
+*::after {
+  box-sizing: inherit;
+  margin: 10px;
+  padding: 10px;
+}
+
+body{
+  max-width: 1200px;
+}
+
+  .header{
+    background-color: black;
+  }
+    .menu{
+      background-color: blueviolet;
+      display: flex;
+    }
+      .menu__logo{
+        background-color: darkred;
+        flex: 1 1 auto;
+      }
+      .menu__nav{
+        background-color: darkred;
+        flex: 4 1 auto;
+      }
+      .menu__sn{
+        background-color: darkred;
+        flex: 1 1 auto;
+      }
+    .title{
+      background-color: orange;
+    }
+      .title__item{
+        background-color: yellow;
+      }
+
+
+  .section{
+    background-color: black;
+    display: flex;
+
+  }
+    .articles{
+      background-color: darkblue;
+      flex: 2 1 auto;
+      display: flex;
+      flex-wrap: wrap;
+    }
+      .articles__article{
+        background-color:aqua;
+        flex: 1 1 45%;
+      }
+      .articles__article--big{
+        background-color:cadetblue;
+        flex: 1 1 100%;
+      }
+    
+      .aside{
+        background-color: brown;
+        flex: 1 1 auto;
+      }
+      .aside__article{
+        background-color: lightgreen;
+      }
+
+
+  .footer{
+    background-color: black;
+
+  }
+    .footer__item{
+      background-color: lightpink;
+    }
+
+
+@media only screen and (max-width: 768px){
+
+  .section{
+    background-color: yellowgreen;
+    flex-direction: column;
+
+  }
+
+
+}
+
+@media only screen and (max-width: 600px){
+  .menu{
+      background-color: blueviolet;
+      flex-direction: column;
+    }
+  
+
+  .aside{
+      background-color: fuchsia;
+      flex: 1 1 auto;
+}
+}
+
+
